@@ -1,0 +1,14 @@
+﻿services:
+  grpctest:
+    image: grpctest
+    build:
+      context: .
+      dockerfile: GRPCTest/Dockerfile
+    ports:
+      - 8080:8080
+    networks:
+      - global_network
+networks:
+  global_network:
+    external: 
+      name: global_network
