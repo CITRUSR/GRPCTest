@@ -32,3 +32,4 @@ C:\DocumentProg\Projects\Test\GRPCTest\GRPCTest\obj\Debug\net8.0\refint\GRPCTest
 C:\DocumentProg\Projects\Test\GRPCTest\GRPCTest\obj\Debug\net8.0\GRPCTest.pdb
 C:\DocumentProg\Projects\Test\GRPCTest\GRPCTest\obj\Debug\net8.0\GRPCTest.genruntimeconfig.cache
 C:\DocumentProg\Projects\Test\GRPCTest\GRPCTest\obj\Debug\net8.0\ref\GRPCTest.dll
+C:\DocumentProg\Projects\Test\GRPCTest\GRPCTest\obj\Debug\net8.0\GRPCTest.sourcelink.json

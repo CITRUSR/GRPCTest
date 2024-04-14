@@ -3,7 +3,7 @@
     image: grpctest
     build:
       context: .
-      dockerfile: GRPCTest/Dockerfile
+      dockerfile: Dockerfile
     ports:
       - 8080:8080
     networks:
