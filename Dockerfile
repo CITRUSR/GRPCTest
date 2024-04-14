@@ -20,4 +20,8 @@ RUN dotnet publish "GRPCTest.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+RUN mkdir -p /app/certificates
+COPY GRPCTest/Cerificates/aspnetapp.pfx /app/certificates/
+
 ENTRYPOINT ["dotnet", "GRPCTest.dll"]

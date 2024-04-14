@@ -5,7 +5,15 @@
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8080:8080
+      - 8080:80
+      - 8081:443
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=youtube
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/app/certificates/aspnetapp.pfx
+    volumes:
+        - ~/.aspnet/https:/https:ro
     networks:
       - global_network
 networks:
